@@ -16,6 +16,12 @@
     display: flex;
     justify-content: space-between;
 }
+.wrap_flex{
+    display: flex;  
+    flex-wrap: wrap;
+    margin-top: 0px !important;
+
+}
 
 .flex{
     display: flex;
@@ -76,6 +82,17 @@ header .icon-container div{
     height: 24px;
     margin: 0 6px;
 }
+.search_bar label input{
+    height: 30px;
+    font-size: 20px;  
+}
+.search_bar label button{
+    height: 32px; 
+    padding: 3px 3px;
+    background-color: #E47D04; 
+    color: wheat;
+     
+}
 
 /* Lower Navbar */
 .lower_navbar{
@@ -91,6 +108,24 @@ header .icon-container div{
     transition: all 0.5s ease;
     border-bottom-left-radius: 15%;
     border-bottom-right-radius: 15%;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(240, 240, 240);
+    width: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 100;
+  }
+.dropdown-content li{
+    border: none!important;
+    border-radius: 0!important;
+}
+ .dropdown:hover .dropdown-content {
+    display: block;
+  }
+a{
+    text-decoration: none;
 }
 
 .lower_navbar ul .active,
@@ -177,7 +212,9 @@ button a{
     align-content: center;
 }
 .services .services_content_block{
-    margin: 50px 0px;
+    margin-top: 50px;
+    margin-bottom: 50px !important;
+    margin: auto;
     /* background-color: orange; */
     border: 1px solid #E47D04;
     width: 200px;
@@ -186,7 +223,7 @@ button a{
     align-content: center;
 }
 .services_content_icon{
-    margin:5px 60px;
+    margin: auto;
     /* background-color: white; */
     width: 100px;
     height: 100px;
@@ -195,7 +232,7 @@ button a{
 }
 .services_content_icon a img{
     margin:2px 2px;
-    
+    margin: auto;    
     width: 95px;
     height: 80px;
     border-radius: 10px;
@@ -207,24 +244,58 @@ button a{
     /* background-color: red; */
     margin: 10px 20px;
     text-align: center;
+    color: black;
 }
+
 
 /* product */
-.product_imgs{
-    margin-top: 25px;
-    /* width: 300px; */
-    height:300px;
-    background-color: red;
-}
-.img_prod{
-    width: 250px;
+.products .services_content{
+    margin: 0 auto;
+    width: 100%;
     height: 300px;
+    border-radius: 10px;
+    align-content: center;
 }
-
+.products .products_content_block{
+    margin-top: 50px;
+    margin-bottom: 50px !important;
+    margin: auto;
+    border: 1px solid #747372;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    align-content: center;
+}
+.products_content_icon{
+    margin: auto;
+    margin-top: 10px;
+    /* background-color: white; */
+    width: 280px;
+    height: 250px;
+    border-radius: 10px;
+   
+}
+.products_content_icon a img{
+    margin:2px 2px;
+    margin: auto;    
+    width: 280px;
+    height: 240px;
+    border-radius: 10px;
+    align-items: center;   
+}
+.products_content_text{
+    margin-bottom: auto;
+    text-align: center;
+    background-color: rgb(212, 209, 209);
+}
+h3{
+    color: black;
+}
 /* sub_title */
 .sub_title{
+    padding: 0px;
     width: 100%;
-    height: 200px;
+    height: 150px;
     background-color:#38699a;
 }
 
@@ -233,8 +304,7 @@ button a{
 }
 
 .sub_title .sub_title_body h1{
-    font-size: 30px;
-   
+    font-size: 30px;   
     text-shadow: 0px 0px 1px black;
 }
 
@@ -246,7 +316,6 @@ button a{
 .sub_title .sub_title_body button{
     background-color: #E47D04;
     color: White;
-    margin: 4px 0;
     padding: 10px 35px;
     border-radius: 10px;
     box-shadow: 2px 2px 10px -3px rgba(0,0,0,0.8);
@@ -265,7 +334,7 @@ footer{
     margin-top: 30px;
     width: 100%;
     height: 200px;
-    background-color: #444;
+    background-color: rgb(89, 99, 102);
     color: azure;
 }
 .contact_details{
@@ -298,14 +367,6 @@ height: 200px;
     .lower_navbar ul li a{
         font-size: 20px;
     }
-    .services_content_icon{
-        margin:2px 33px;       
-    }
-    .services_content_icon a img{
-        margin:2px 2px;        
-        width: 85px;
-        height: 80px;       
-    }
     .services_content_text{
         margin: 5px 10px;
     }
@@ -328,13 +389,6 @@ height: 200px;
     .services .services_content_block{
         width: 40%;        
     }
-    .services_content_icon{
-        margin:5px 70px;       
-    }
-    .services_content_icon a img{
-        margin:2px 8px;        
-        width: 100px;      
-    }
     .icon-container flex{
         display: flex;
     }
@@ -354,9 +408,6 @@ height: 200px;
     .showcase{
         background-position: 30% 0%;
     }
-    .services .services_content_block{
-        width: 237.5px;        
-    }
     .container{
         width: 520px;
     }
@@ -366,6 +417,21 @@ height: 200px;
     .about_company{
         width: 200px;
         } 
+        .sub_title .sub_title_body h1{
+            font-size: 25px;   
+            text-shadow: 0px 0px 1px black;
+        }
+        
+        .sub_title .sub_title_body h2{
+            font-size: 28px;
+            margin: 4px 0 10px;
+        }
+        
+        .sub_title .sub_title_body button{
+            padding: 6px 25px;
+            font-size: 22px;
+            font-weight: 500;
+        }
 
 }
 
@@ -384,14 +450,18 @@ height: 200px;
     .lower_navbar ul li a{
         font-size: 16px;
     }
-    .services .services_content_block{
-        width: 237.5px;        
-    }
     .services_content_text{
         margin: 5px 25px;
     }
     .container{
         width: 450px;
+    }
+    .search_bar label input{
+        height: 29px;
+        font-size: 16px;  
+    }
+    .search_bar label button{
+        height: 29px;         
     }
 }
 
@@ -407,5 +477,12 @@ height: 200px;
     }
     .container{
         width: 400px;
+    }
+    .search_bar label input{
+        height: 25px;
+        font-size: 12px;  
+    }
+    .search_bar label button{
+        height: 26px;         
     }
 }

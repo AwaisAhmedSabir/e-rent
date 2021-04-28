@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="e-rent website">
-    <title>Home</title>
+    <title>Document</title>
     <link rel="stylesheet" href="./css/index.css">
 </head>
-
 <body>
     <header>
         <nav class="upper_navbar">
-            <div class="container d-flex">
+           <div class="container d-flex">
                 <div class="logo">
                     <a href="#">E-Rent</a>
                 </div>
+                <div class="search_bar">
+                    <label for="">
+                        <input type="Search" placeholder="Search">
+                        <button>Search</button>
+                    </label>
+                </div>                   
+                
                 <div class="social">
                     <div class="icon-container flex">
-                        <div class="facebook"><a href="#"><img src="./icons/facebook.svg" alt=""></a></div>
-                        <div class="instagram"><a href="#"><img src="./icons/instagram.svg" alt=""></a></div>
-                        <div class="linkedin"><a href="#"><img src="./icons/linkedin.svg" alt=""></a></div>
-
+                        <div class="facebook"><a href="https://www.facebook.com/"><img src="./icons/facebook.svg" alt=""></a></div>
+                        <div class="instagram"><a href="https://www.instagram.com/"><img src="./icons/instagram.svg" alt=""></a></div>
+                        <div class="linkedin"><a href="https://pk.linkedin.com/"><img src="./icons/linkedin.svg" alt=""></a></div>
+                        
                     </div>
                 </div>
-            </div>
+           </div>
         </nav>
         <nav class="lower_navbar">
             <div class="container">
@@ -33,19 +37,26 @@
                     <li class="active"><a href="#">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="#">Services</a></li>
-                    <li><a href="#">Products</a></li>
+                    <div class="dropdown">
+                        <li><a href="#">Products</a></li>
+                        <div class="dropdown-content">
+                          <li><a href="#">Camera</a></li>
+                          <li><a href="#">LED</a></li>
+                          <li><a href="#">Speakers</a></li>
+                        </div>
+                      </div>                    
                     <li><a href="#">Contact</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
-    <section class="showcase" style="background-image: url(./cover/showcase.jpg);">
+    <section class="showcase" style="background-image: url(./cover/showcase.webp);">
         <div class="container">
             <div class="showcase_body">
                 <h1>Build Credit History by Paying Rent</h1>
                 <h2>Providing Online Renter Tools Since 2004</h2>
-                <button><a href="Signup.html">Register</a> </button>
+                <button><a href="./Signup.html">Register</a> </button>
             </div>
         </div>
     </section>
@@ -101,31 +112,74 @@
     <section class="sub_title">
         <div class="container">
             <div class="sub_title_body">
-                <h1>Build Credit History by Paying Rent</h1>
-                <h2>Providing Online Renter Tools Since 2004</h2>
+                <h1>Providing Online Renter Tools Since 2004</h1>
+                <h2>Build Credit by Paying Rent</h2>
                 <button><a href="login.html">Login</a> </button>
             </div>
         </div>
     </section>
 
-    <div class="container d-flex">
-        <div class="product_imgs">
-            <a href="#"><img src="./products/dslr.jpg" alt="" class="img_prod"></a>
-        </div>
-        <div class="product_imgs">
-            <a href="#"><img src="./products/came.jpg" alt="" class="img_prod"></a>
-        </div>
-        <div class="product_imgs">
-            <a href="#"><img src="./products/lap.jpg" alt="" class="img_prod"></a>
-        </div>
-    </div>
 
-    <br> <br>
+    <section class="products">
+        <div class="container">
+            <div class="products_content wrap_flex">
+                <div class="products_content_block ">
+                    <div class="products_content_icon">
+                        <a href="#"><img src="./products/dslr.jpg" alt=""></a>
+                    </div>
+                    <div class="products_content_text">
+                        <a href="#"><h3>Select Cameras</h3></a>
+                    </div>
+                </div>
+                <div class="products_content_block ">
+                    <div class="products_content_icon">
+                        <a href="#"><img src="./products/dslr.jpg" alt=""></a>
+                    </div>
+                    <div class="products_content_text">
+                        <a href="#"><h3>Select Cameras</h3></a>
+                    </div>
+                </div>
+                <div class="products_content_block ">
+                    <div class="products_content_icon">
+                        <a href="#"><img src="./products/dslr.jpg" alt=""></a>
+                    </div>
+                    <div class="products_content_text">
+                        <a href="#"><h3>Select Cameras</h3></a>
+                    </div>
+                </div>
+                <div class="products_content_block ">
+                    <div class="products_content_icon">
+                        <a href="#"><img src="./products/dslr.jpg" alt=""></a>
+                    </div>
+                    <div class="products_content_text">
+                        <a href="#"><h3>Select Cameras</h3></a>
+                    </div>
+                </div>
+                <div class="products_content_block ">
+                    <div class="products_content_icon">
+                        <a href="#"><img src="./products/dslr.jpg" alt=""></a>
+                    </div>
+                    <div class="products_content_text">
+                        <a href="#"><h3>Select Cameras</h3></a>
+                    </div>
+                </div>
+                <div class="products_content_block ">
+                    <div class="products_content_icon">
+                        <a href="#"><img src="./products/dslr.jpg" alt=""></a>
+                    </div>
+                    <div class="products_content_text">
+                        <a href="#"><h3>Select Cameras</h3></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="sub_title">
         <div class="container">
-            <div class="sub_title_body">
-                <h1>Build Credit History by Paying Rent</h1>
-                <h2>Providing Online Renter Tools Since 2004</h2>
+            <div class="sub_title_body">                
+                <h1>Providing Online Renter Tools Since 2004</h1>
+                <h2>Build Credit by Paying Rent</h2>
                 <button>Sign Up</button>
             </div>
         </div>
@@ -136,7 +190,7 @@
             <div class="contact_details">
                 <div class="details  d-flex">
                     <div class="logo">
-                        <a href="#"><img src="./icons/instagram.svg" alt="" class="footer_img"></a>
+                        <a href="#"><img src="./icons/instagram.svg" alt="" class="footer_img" ></a>
                     </div>
                     <div class="detail">
                         PAC, Kamra Cantt, Attock
@@ -144,7 +198,7 @@
                 </div>
                 <div class="details  d-flex">
                     <div class="logo">
-                        <a href="#"><img src="./icons/instagram.svg" alt="" class="footer_img"></a>
+                        <a href="#"><img src="./icons/instagram.svg" alt="" class="footer_img" ></a>
                     </div>
                     <div class="detail">
                         PAC, Kamra Cantt, Attock
@@ -152,7 +206,7 @@
                 </div>
                 <div class="details  d-flex">
                     <div class="logo">
-                        <a href="#"><img src="./icons/instagram.svg" alt="" class="footer_img"></a>
+                        <a href="#"><img src="./icons/instagram.svg" alt="" class="footer_img" ></a>
                     </div>
                     <div class="detail">
                         PAC, Kamra Cantt, Attock
@@ -161,23 +215,23 @@
             </div>
             <div class="about_company">
                 <div class="details" style="text-align: center;">
-                    About Company
+                        About Company
                 </div>
                 <div class="details" style="text-align: center;">
-                    PAC, Kamra Cantt, AttockPAC, Kamra Cantt, AttockPAC,
+                    PAC, Kamra Cantt, AttockPAC, Kamra Cantt, AttockPAC, 
                 </div>
                 <div class="details  d-flex">
                     <div class="logo">
-                        <a href="#"><img src="./icons/instagram.svg" alt="" class="footer_img"></a>
+                        <a href="#"><img src="./icons/instagram.svg" alt="" class="footer_img" ></a>
                     </div>
                     <div class="logo">
-                        <a href="#"><img src="./icons/instagram.svg" alt="" class="footer_img"></a>
+                        <a href="#"><img src="./icons/instagram.svg" alt="" class="footer_img" ></a>
                     </div>
                     <div class="logo">
-                        <a href="#"><img src="./icons/instagram.svg" alt="" class="footer_img"></a>
+                        <a href="#"><img src="./icons/instagram.svg" alt="" class="footer_img" ></a>
                     </div>
                     <div class="logo">
-                        <a href="#"><img src="./icons/instagram.svg" alt="" class="footer_img"></a>
+                        <a href="#"><img src="./icons/instagram.svg" alt="" class="footer_img" ></a>
                     </div>
                 </div>
             </div>
@@ -185,5 +239,4 @@
     </footer>
 
 </body>
-
 </html>
