@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 section{
     height: 100%;
     width: 100%;
@@ -14,112 +19,94 @@ a{
     height: 100vh;
     background-color: rgb(31, 28, 63);
     display: block;
+    text-align: center;
 }
 .vertical_menu .dash_title{
-    margin: auto;
-    width: 110px;
-    height: 130px;
-    /* background-color: brown; */
-    margin-bottom: 30px !important; 
+    padding: 20px 0px;
 }
-.vertical_menu .logo{    
-    display: flex;
-}
+
 .vertical_menu .dash_title img{
-    margin: auto;
-    margin-top: 10px;
-    width: 30px;
-    height: 30px;
+    width: 20%;
+    height: 20%;
     background-color: aliceblue;
     border-radius: 50%;
 }
 .dash_title h3{
-    font-size: 12px;
+    font-size: 1.5vw;
     color: aliceblue;
-    text-align: center;
 }
-.dash_title h5{
-    margin-top: -8px;
-    font-size: 9px;
+.dash_title p{
+    font-size: 1vw;
     color: rgb(215, 218, 221);
-    text-align: center;
 }
 .dash_title button{
-    margin-top: 0px;
-    display: flex;
-    margin: auto;
-    width: 110px;
-    height: 27px;
+    margin-top: 8px;
+    padding: 8px 18px;
     background-color: rgb(52, 189, 70);
-    border-radius: 6px;
-}
-button a, a strong{
     color: white;
-    margin: auto !important;
-    padding: 3px 0;
+    border: none;
+    border-radius: 4px;
 }
+
 .vertical_menu .menu{
-    margin-top: 4px;
-    width: auto;
-    height: 400px;
-    display: block;
+    margin: 30px 0;
 }
-.menu .menu_list{
-    margin-bottom: 15px !important;    
-    margin: auto;
-    height: 20px;
-    width: 110px;
+
+.menu .menu_list{ 
+    margin: 12px auto;
+    height: 26px;
+    width: 50%;
     display: flex;
     border: 0.1px solid rgb(204, 199, 199);
     border-radius: 4px;
 }
 
 .menu_list a img{
-    width: 20px;
-    height: auto;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    height: 100%;
     background-color: aliceblue;
 }
+
 .menu_list h3{
-    font-size: 16px;
-    color: aliceblue;
-    margin-left: 15px;
-    margin-top: 0px;   
+    font-size: 1.4vw;
+    color: aliceblue; 
+    margin-left: 34px; 
+    align-self: center;
 }
 
 .menu_footer{
+    margin: 60px 0 0;
+}
+
+.menu_footer .footer-card{
     margin: auto;
     background-color: white;
-    width: 110px;
-    height: 100px;
-    border-radius: 10px;
+    width: 60%;
+    height: auto;
+    padding: 12px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px black, 3px 3px 6px rgb(31, 28, 63);
 }
+
 .menu_footer a img{
-    display: flex;
-    margin: auto;
-    width: 40px;
-    height: 40px;
+    width: 50%;
+    height: 40%;
+    margin: 8px 0 6px;
     border-radius: 50%;
 }
 .menu_footer h3{
-    margin-top: 8px !important;
-    font-size: 12px;
-    font-weight: 500px;
-    color: black;
-    text-align: center;
+    font-size: 1.4vw;
+    letter-spacing: 1px;
 }
 .menu_footer h5{
-    margin-top: -8px !important;
-    font-size: 9px;
-    font-weight: 500px;
+    font-size: 0.9vw;
     color: rgb(92, 89, 89);
-    text-align: center;
 }
 .menu_footer h4{
-    margin-top: -9px !important;
-    font-size: 14px;
+    font-size: 1.2vw;
     font-weight: 500px;
     color: rgb(41, 32, 121);
-    text-align: center;
 }
 
 
