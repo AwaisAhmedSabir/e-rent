@@ -1,109 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/css/Dashboard.css">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="./css/Dashboard.css">
 </head>
+
 <body>
-    <section>
-        <div class="vertical_menu">
+    <section class="admin-panel">
+        <aside class="vertical_menu">
             <div class="dash_title">
-                <div class="logo">                   
-                    <img src="/icons/facebook.svg">                    
-                </div>
+                <img src="./icons/facebook.svg">
                 <h3>
                     Awais Khattak
                 </h3>
-                <h5>
+                <p>
                     awaisahmed@gmail.com
-                </h5>
+                </p>
                 <button>
-                    <a href="#">
-                        <strong>Update</strong>
-                    </a>
-                    
+                    Update
                 </button>
             </div>
 
             <div class="menu">
                 <div class="menu_list">
                     <a href="#">
-                        <img src="/icons/facebook.svg" alt="">
-                    </a>                    
+                        <img src="./icons/home.png" alt="">
+                    </a>
                     <h3>
                         <a href="#">HOME</a>
                     </h3>
                 </div>
                 <div class="menu_list">
                     <a href="#">
-                        <img src="/icons/facebook.svg" alt="">
-                    </a>                    
+                        <img src="./icons/products.png" alt="">
+                    </a>
+                    <h3>
+                        <a href="#">Products</a>
+                    </h3>
+                </div>
+                <div class="menu_list">
+                    <a href="#">
+                        <img src="./icons/transactions.png" alt="">
+                    </a>
+                    <h3>
+                        <a href="#">Transactions</a>
+                    </h3>
+                </div>
+                <div class="menu_list">
+                    <a href="#">
+                        <img src="./icons/account.png" alt="">
+                    </a>
+                    <h3>
+                        <a href="#">Account</a>
+                    </h3>
+                </div>
+                <div class="menu_list">
+                    <a href="#">
+                        <img src="./icons/facebook.svg" alt="">
+                    </a>
                     <h3>
                         <a href="#">HOME</a>
                     </h3>
                 </div>
                 <div class="menu_list">
                     <a href="#">
-                        <img src="/icons/facebook.svg" alt="">
-                    </a>                    
+                        <img src="./icons/analys.png" alt="">
+                    </a>
                     <h3>
-                        <a href="#">HOME</a>
+                        <a href="#">Analysis</a>
                     </h3>
                 </div>
-                <div class="menu_list">
-                    <a href="#">
-                        <img src="/icons/facebook.svg" alt="">
-                    </a>                    
-                    <h3>
-                        <a href="#">HOME</a>
-                    </h3>
-                </div>
-                <div class="menu_list">
-                    <a href="#">
-                        <img src="/icons/facebook.svg" alt="">
-                    </a>                    
-                    <h3>
-                        <a href="#">HOME</a>
-                    </h3>
-                </div> 
-                <div class="menu_list">
-                    <a href="#">
-                        <img src="/icons/facebook.svg" alt="">
-                    </a>                    
-                    <h3>
-                        <a href="#">HOME</a>
-                    </h3>
-                </div>                 
             </div>
 
             <div class="menu_footer">
-                <a href="#">
-                    <img src="/products/dslr.jpg" alt="">
-                </a>  
-                <h3>
-                     Awais Khattak
-                </h3>
-                <h5>
-                    awaisahmed@gmail.com
-                </h5>
-                <h4>
-                    Standard
-                </h4>
+                <div class="footer-card">
+                    <a href="#">
+                        <img src="./products/dslr.jpg" alt="">
+                    </a>
+                    <h3>
+                        Awais Khattak
+                    </h3>
+                    <h5>
+                        awaisahmed@gmail.com
+                    </h5>
+                    <h4>
+                        Your Plan: Standard
+                    </h4>
+                </div>
             </div>
-        </div>
-        
-        <section class="contents">
+        </aside>
+        <main class="contents">
             <nav>
-                
+                <div class="container d-flex">
+                    <div class="logo">
+                        <a href="#">E-Rent</a>
+                    </div>
+                    <div class="search_bar">
+                        <label for="">
+                            <input type="Search" placeholder="Search..">
+                            <button>Search</button>
+                        </label>
+                    </div>
+
+                    <div class="social">
+                        <div class="icon-container flex">
+                            <div class="facebook"><a href="https://www.facebook.com/"><img src="./icons/facebook.svg"
+                                        alt=""></a></div>
+                            <div class="instagram"><a href="https://www.instagram.com/"><img src="./icons/instagram.svg"
+                                        alt=""></a></div>
+                            <div class="linkedin"><a href="https://pk.linkedin.com/"><img src="./icons/linkedin.svg"
+                                        alt=""></a></div>
+                        </div>
+                    </div>
+                </div>
             </nav>
-        </section>
+            <section class="dashboard">
+                <h2>E-Rent Dashboard Pannel</h2>
+                <div class="small-cards d-flex">
+                    <div class="card orders">
+                        <h5>New Orders</h5>
+                        <h3 class="value">3459</h3>
+                        <p class="percentage">2.00% (30 days)</p>
+                    </div>
+                    <div class="card incomes">
+                        <h5>Total Incomes</h5>
+                        <h3 class="value">$1,966</h3>
+                        <p class="percentage">1.20%</p>
+                    </div>
+                    <div class="card expense">
+                        <h5>Total Expense</h5>
+                        <h3 class="value">2866</h3>
+                        <p class="percentage">1.50%</p>
+                    </div>
+                    <div class="card users">
+                        <h5>New Users</h5>
+                        <h3 class="value">3206</h3>
+                        <p class="percentage">2.00%</p>
+                    </div>
+                </div>
+                <div class="large-cards d-flex">
+                    <div class="card">
+                        <div class="title">
+                            <h2>Summary</h2>
+                        </div>
+                        <div class="card-content">
+                                <div class=" card_summary">
+                                    <img src="./products/dslr.jpg" alt="">
+                                    <h3>10 Products are in stock</h3>
+                                </div>
+                                <div class=" card_summary">
+                                    <img src="./products/dslr.jpg" alt="">
+                                    <h3>10 Products are in stock</h3>
+                                </div>
+                                <div class=" card_summary">
+                                    <img src="./products/dslr.jpg" alt="">
+                                    <h3>10 Products are in stock</h3>
+                                </div>
+                                <div class=" card_summary">
+                                    <img src="./products/dslr.jpg" alt="">
+                                    <h3>10 Products are in stock</h3>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="title">
+                            <h2>Top Selling Products</h2>
+                        </div>
+                        <div class="card-content selling_prod">
+                            <img src="./products/dslr.jpg" alt="">
+                            <img src="./products/dslr.jpg" alt="">
+                            <img src="./products/dslr.jpg" alt="">
+                            <img src="./products/dslr.jpg" alt="">
+                            <img src="./products/dslr.jpg" alt="">
+                            <img src="./products/dslr.jpg" alt="">
+                            <img src="./products/dslr.jpg" alt="">
+                            <img src="./products/dslr.jpg" alt="">
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
 
     </section>
-    
 
-    
+
+
 </body>
+
 </html>
