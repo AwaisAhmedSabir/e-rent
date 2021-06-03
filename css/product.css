@@ -139,26 +139,81 @@ header .icon-container div{
     display: flex!important;
     margin-bottom: 20px!important;
     margin: auto;
-    height: 500px;
-    background-color: #f1f1f1
+    justify-content: space-between;
 }
-/* product_form */
+
+.product_img{
+    width: 30%;
+    text-align: center;
+}
 
 .product_img img{
-    margin-top: 5px;
-    width: 400px;
-    height: 400px;
+    max-width: 300px;
+    max-height: 400px;
+    width: 80%;
+    height: 80%;
 }
+
 .product_form{
-    margin-top: 5px;
-    margin-left: 20px ;
-    float: right;
-    width: 640px;
-    height: 490px;
-    background-color: rgb(207, 203, 203);
+    width: 48%;
+    height: 60vh;
+}
+
+.product_form .price_section{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.product_form .pricing{
+    display: flex;
+    flex-direction: column;
+    color: #909090;
+    padding: 0 8px;
+}
+
+.product_form .product_price{
+    border-right: .3px solid #909090;
+    flex-grow: 1;
+}
+
+.product_form .Discout_Market_price{
+    flex-grow: 1;
+}
+
+.product_form .Discout_Market_price .price{
+    text-decoration: line-through;
+    color: #0ee199;
+}
+
+.product_form .price{
+    color: #404040;
+    font-size: 1.4rem;
+}
+
+.product_form .Discount{
+    background: #e0ffc1;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px 10px;
+    align-self: center;
 }
 
 
+.product_form .action button{
+    color: #fff;
+    background-color: #f88b2a;
+    border-color: #cf6507;
+    border-radius: 4px;
+    padding: 10px 45px;
+    margin: 24px 10px;
+    font-size: 1rem;
+    border: 0;
+}
+
+.product_description{
+    width: 22%;
+}
 
 /* sub_title */
 
