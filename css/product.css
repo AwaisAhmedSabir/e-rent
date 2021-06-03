@@ -20,9 +20,9 @@
     display: flex;
 }
 
-section{
+/* section{
     padding: 80px 0;
-}
+} */
 
 section .title{
     position: relative;
@@ -104,7 +104,7 @@ header .icon-container div{
     text-shadow: 1px 1px 2px black, 2px 2px 4px #444;
 }
 
-.lower_navbar ul li:nth-child(1){
+.lower_navbar ul li:nth-child(2){
     border-left: 1px solid rgb(168, 168, 168);
 }
 
@@ -114,99 +114,57 @@ header .icon-container div{
     text-shadow: 0px 0px 2px white, 1px 1px 3px #5555;
 }
 
-/* Showcase */
-.showcase{
-    width: 100%;
-    height: 83.5vh;
-    background: url(/Assets/images/showcase.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 
-.showcase .showcase_body{
-    padding-top: 35px;
+/* title */
+.about{
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+    font-family: Century Gothic, Arial, Helvetica, sans-serif;
     text-align: center;
 }
 
-.showcase .showcase_body h1{
-    font-size: 50px;
-    margin: 12px 0 4px;
-    text-shadow: 0px 0px 1px black;
+.about .container{
+    display: flex;
+    justify-content: space-between;
 }
 
-.showcase .showcase_body h2{
-    font-size: 34px;
-    margin: 4px 0 10px;
-}
-
-.showcase .showcase_body button{
-    background-color: #E47D04;
-    color: White;
-    margin: 4px 0;
-    padding: 10px 35px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px -3px rgba(0,0,0,0.8);
-    font-size: 22px;
+.about h1{
     font-weight: 500;
-    cursor: pointer;
+    font-size: 16pt
 }
 
-.showcase .showcase_body button:hover{
-    background-color: #FFE694;
-    color: Black;
+/* About_us_content */
+.products{
+    display: flex!important;
+    margin-bottom: 20px!important;
+    margin: auto;
+    height: 500px;
+    background-color: #f1f1f1
+}
+/* product_form */
+
+.product_img img{
+    margin-top: 5px;
+    width: 400px;
+    height: 400px;
+}
+.product_form{
+    margin-top: 5px;
+    margin-left: 20px ;
+    float: right;
+    width: 640px;
+    height: 490px;
+    background-color: rgb(207, 203, 203);
 }
 
-/* Services */
 
-.services .title::after{
-    content: "what we offer";
-}
-
-.services .services_content{
-    margin: 0 auto;
-    width: 100%;
-    height: 300px;
-    border-radius: 10px;
-    align-content: center;
-}
-.services .services_content_block{
-    margin: 50px 0px;
-    /* background-color: orange; */
-    border: 1px solid #E47D04;
-    width: 20%;
-    height: 200px;
-    border-radius: 10px;
-    align-content: center;
-}
-.services_content_icon{
-    margin:5px 60px;
-    /* background-color: white; */
-    width: 100px;
-    height: 100px;
-    border-radius: 10px;
-   
-}
-.services_content_icon a img{
-    margin:2px 2px;
-    
-    width: 95px;
-    height: 80px;
-    border-radius: 10px;
-    align-items: center;
-    filter: invert(48%) sepia(33%) saturate(1207%) hue-rotate(130deg) brightness(95%) contrast(80%);
-   
-}
-.services_content_text{
-    /* background-color: red; */
-    margin: 10px 20px;
-    text-align: center;
-}
 
 /* sub_title */
+
 .sub_title{
     width: 100%;
-    height: 200px;
+    height: 115px;
     background-color:#38699a;
 }
 
@@ -214,15 +172,10 @@ header .icon-container div{
     text-align: center;
 }
 
-.sub_title .sub_title_body h1{
+.sub_title .sub_title_body h1, .about h1{
     font-size: 30px;
    
-    text-shadow: 0px 0px 1px black;
-}
-
-.sub_title .sub_title_body h2{
-    font-size: 34px;
-    margin: 4px 0 10px;
+    text-shadow: 1px 1px 1px black;
 }
 
 .sub_title .sub_title_body button{
@@ -242,24 +195,35 @@ header .icon-container div{
     color: Black;
 }
 
-/* contents */
-.content_button{
-    background-color: #E47D04;
-    color: White;
-    margin: 2px 0;
-    padding: 2px 10px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px -3px rgba(0,0,0,0.8);
-    font-size: 15px;
-    font-weight: 500;
-    cursor: pointer;
-}
-.services_content_round{
-    border: 1px solid #E47D04;
-    border-radius: 50px;
-    align-content: center;
-    width: 20%;
+/* footer */
+footer{
+    margin-top: 30px;
+    width: 100%;
     height: 200px;
+    background-color: #444;
+    color: azure;
+}
+.contact_details{
+width: 290px;
+height: 200px;
+} 
+.about_company{
+    width: 290px;
+    height: 200px;
+    } 
+.details{
+    margin-top: 15px;
+    width: auto;
+    height: 52px;
+}
+.footer_img{
+    margin-top: 10px;
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1);
+}
+.detail{
+    margin: 10px;
 }
 
 @media (max-width: 1200px){
@@ -268,6 +232,9 @@ header .icon-container div{
     }
     .lower_navbar ul li a{
         font-size: 20px;
+    }
+    .about_us{
+        height: 600px;
     }
 }
 
@@ -278,6 +245,19 @@ header .icon-container div{
     }
     .lower_navbar ul li a{
         font-size: 19px;
+    }
+    .about_us{
+        height: 700px;
+    }
+    .sub_title .sub_title_body h1{
+        font-size: 20px;
+       
+        text-shadow: 0px 0px 1px black;
+    }
+    
+    .sub_title .sub_title_body h2{
+        font-size: 23px;
+        margin: 4px 0 10px;
     }
 }
 
@@ -291,6 +271,12 @@ header .icon-container div{
     .showcase{
         background-position: 30% 0%;
     }
+    .contact_details{
+        width: 200px;
+        } 
+    .about_company{
+        width: 200px;
+        } 
 }
 
 @media (max-width: 600px){    
@@ -308,6 +294,19 @@ header .icon-container div{
     .lower_navbar ul li a{
         font-size: 16px;
     }
+    .sub_title .sub_title_body h1{
+        font-size: 20px;
+       
+        text-shadow: 0px 0px 1px black;
+    }
+    
+    .sub_title .sub_title_body h2{
+        font-size: 23px;
+        margin: 4px 0 10px;
+    }
+    .about_us{
+        height: 800px;
+    }
 }
 
 @media (max-width: 480px){
@@ -316,5 +315,8 @@ header .icon-container div{
     }
     .lower_navbar ul li a{
         font-size: 14px;
+    }
+    .about_us{
+        height: 900px;
     }
 }

@@ -4,18 +4,14 @@
 @lower_nav_bg:rgb(240, 240, 240);
 @lower_nav_border: rgb(160, 160, 160);
 @a_active:#E47D04;
-@shadow:rgba(80,80,80,1);
+@shadow:rgb(224, 193, 193);
 @a_hover:#7cd653;
 @about:#f1f1f1;
 @title_about:#38699c;
 //  variables
 
 
-* {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-}
+
 a{
     text-decoration: none;
 }
@@ -79,9 +75,7 @@ a{
             box-shadow: @shadow;
             .a_imp;
         }
-        &:nth-child(2) {
-            border-left: 1px solid @lower_nav_border;
-        }
+
         a {
             font-size: 22px;
             text-shadow: @shadow;
@@ -130,6 +124,11 @@ header {
 			box-shadow: @shadow;
 		}
 	}
+}
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 
 .showcase {

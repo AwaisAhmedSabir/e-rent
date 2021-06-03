@@ -93,6 +93,15 @@ header .icon-container div{
     color: wheat;
      
 }
+.login_btn{
+    padding: 5px 10px;
+    background-color: #E47D04;
+    color: wheat;
+    border-radius: 10px;
+}
+.login_btn:hover{
+    cursor: pointer;
+}
 
 /* Lower Navbar */
 .lower_navbar{
@@ -431,6 +440,16 @@ height: 200px;
             padding: 6px 25px;
             font-size: 22px;
             font-weight: 500;
+        }
+        .login_btn{
+            padding: 0px 0px;
+            /* width: 5px; */
+            background-color: #E47D04;
+            color: wheat;
+            border-radius: 10px;
+        }
+        .login_btn h4{
+            font-size: 8px;
         }
 
 }
