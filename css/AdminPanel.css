@@ -3,11 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-.admin-panel{
-    height: 100%;
-    width: 100%;
-    display: flex;
-}
 
 a{
     text-decoration: none;
@@ -120,7 +115,7 @@ a{
     color: rgb(41, 32, 121);
 }
 
-section .contents{
+.contents{
     background-color: rgb(201, 197, 197);
     width: 80%;
     height: 100vh;
@@ -212,18 +207,19 @@ section .contents{
 }
 
 .small-cards h5{
+    font-size: 1.3vw;
     color: black;
     text-transform: uppercase;
-    text-shadow: 0px 0px 1px gray;
+    text-shadow: 0px 0px 1px rgb(192, 192, 192);
 }
 
 .small-cards h3{
     letter-spacing: 2px;
-    font-size: 30px;
+    font-size: 2.5vw;
 }
 
 .small-cards p{
-    font-size: 10px;
+    font-size: 0.9vw;
     letter-spacing: 1px;
 }
 
@@ -249,27 +245,72 @@ section .contents{
     padding: 2px 5px;
 }
 .card_summary{
-    margin-top: 8px;
-    margin-left: 9px;
+    margin: 8px auto 0;
     display: flex;
-    width: 400px;
+    width: 90%;
     height: 70px;
     border: 1px solid rgb(134, 134, 134);
-    /* background-color: red; */
 }
 .card_summary img{
    width: 100px;
-   height: 70px;
+   height: 100%;
 }
 .card_summary h3{
     text-align: center;
+    font-size: 1.8vw;
     margin: auto;
 }
-.selling_prod img{
-    margin-left: 10px;
+
+.selling_prod{
+    display: flex;
     flex-wrap: wrap;
-    width: 120px;
-    height: 145px;
+    justify-content: space-around;
 }
 
+.selling_prod img{
+    margin-top: 4px;
+    width: 40%;
+    height: 20vh;
+    max-width: 150px;
+    min-width: 100px;
+}
 
+@media (max-width: 768px) {
+    .vertical_menu{
+        width: 30%;
+        height: 1100px;
+    }
+    .contents{
+        width: 70%;
+        height: 1100px;
+    }
+    .small-cards{
+        flex-wrap: wrap;
+    }
+    .dashboard .small-cards .card{
+        width: 40%!important;
+        margin: 4px auto;
+    }
+    .small-cards h5{
+        font-size: 1.5vw;
+    }
+    
+    .small-cards h3{
+        font-size: 3vw;
+    }
+    
+    .small-cards p{
+        font-size: 1.2vw;
+    }
+    .large-cards{
+        margin: 0;
+        flex-direction: column!important;
+    }
+    .large-cards .card{
+        width: 96%;
+        margin: 4px auto;
+    }
+    .large-cards .card .title h2{
+        font-size: 3vw;
+    }
+}
