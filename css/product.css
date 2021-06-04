@@ -165,7 +165,7 @@ header .icon-container div{
     margin-bottom: 20px;
 }
 
-.product_form .pricing{
+.products .label{
     display: flex;
     flex-direction: column;
     color: #909090;
@@ -213,6 +213,21 @@ header .icon-container div{
 
 .product_description{
     width: 22%;
+}
+
+.product_description ul{
+    list-style: none;
+    padding: 0 30px;
+}
+
+.product_description ul li span{
+    color: #909090;
+}
+
+.product_description ul li span:first-child{
+    color: #404040;
+    font-size: 1rem;
+    font-weight: 600;
 }
 
 /* sub_title */
